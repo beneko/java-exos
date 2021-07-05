@@ -10,7 +10,7 @@ public class Exo3 {
         System.out.println("Please enter a temperature in Fahrenheit:");
         float f = scanner.nextFloat();
         float c = ((5f / 9f) * (f - 32));
-        System.out.println(c);
+        System.out.println("it's equal to " + c + " Celsius degrees");
 
     }
 }
