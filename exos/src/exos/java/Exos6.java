@@ -18,6 +18,6 @@ public class Exos6 {
         asci = scanner.nextInt();
         chr = (char) asci;
 
-        System.out.println("it represent "+ chr + " character.");
+        System.out.println("it represent \'"+ chr + "\' character.");
     }
 }
