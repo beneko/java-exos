@@ -41,7 +41,7 @@ public class Exos14 {
                 System.out.print("*");
 
             }
-            System.out.println(" ");
+            System.out.println("");
         }
     }
 }
