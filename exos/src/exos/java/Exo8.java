@@ -25,7 +25,18 @@ public class Exo8 {
         System.out.println("Please insert your birth year:");
         year = scanner.nextInt();
         age = currentYear - year;
-        System.out.println("You're "+age + " years old.");
+
+        if (age < 18){
+
+            System.out.println("you are a minor.");
+
+        } else {
+
+            System.out.println("you are a major.");
+
+        }
+
+        System.out.println("And you're "+age + " years old.");
 
     }
 }
