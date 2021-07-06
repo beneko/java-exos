@@ -21,42 +21,46 @@ public class Exo15 {
     public static void main(String[] args) {
 
         String words;
+        String wordsNew;
         String inverse;
         int length;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Veuillez entrer un mot ou une phrase: ");
-        words = scanner.next();
-        words = words.toLowerCase();
+        System.out.println("Entrez un mot ou une phrase :");
+        words = scanner.nextLine();
         length = words.length();
+        wordsNew = words;
         boolean palindrome = true;
 
         for (int i = 0; i < length; i++) {
             char chr = words.charAt(i);
             switch (chr) {
-                case ' ':
-                   words = words.replace(" ", "");
+               case ' ':
+                   wordsNew = wordsNew.replace(" ", "");
                 case ',':
-                    words = words.replace(",", "");
+                    wordsNew = wordsNew.replace(",", "");
                 case '-':
-                    words = words.replace("-", "");
+                    wordsNew = wordsNew.replace("-", "");
                 case '\'':
-                    words = words.replace("\'", "");
+                    wordsNew = wordsNew.replace("\'", "");
             }
         }
-        length = words.length(); // update length
-        StringBuilder str = new StringBuilder(words);
+        wordsNew = wordsNew.toLowerCase();
+        int newLength = wordsNew.length(); // update length
+        StringBuilder str = new StringBuilder(wordsNew);
         inverse = str.reverse().toString();
 
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < newLength; i++) {
 
-            if (words.charAt(i) != inverse.charAt(i)) {
+            if (wordsNew.charAt(i) != inverse.charAt(i)) {
 
                 palindrome = false;
                 break;
 
             }
         }
+        System.out.println(wordsNew);
+        System.out.println(inverse);
         if (palindrome){
 
             System.out.println("C'est un palindrome!");
