@@ -50,9 +50,9 @@ public class Exo15 {
         StringBuilder str = new StringBuilder(wordsNew);
         inverse = str.reverse().toString();
 
-        for (int i = 0; i < newLength; i++) {
+        for (int j = 0; j < newLength; j++) {
 
-            if (wordsNew.charAt(i) != inverse.charAt(i)) {
+            if (wordsNew.charAt(j) != inverse.charAt(j)) {
 
                 palindrome = false;
                 break;
