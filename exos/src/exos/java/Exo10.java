@@ -1,3 +1,5 @@
+package exos.java;
+
 import java.util.Scanner;
 
 public class Exo10 {

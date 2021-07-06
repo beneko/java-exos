@@ -15,7 +15,7 @@ public class Exo11 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter a integer number:");
+        System.out.println("Please enter an integer number:");
         number = scanner.nextInt();
 
         for ( i = 1 ; i < number; i++) {
