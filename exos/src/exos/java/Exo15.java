@@ -21,7 +21,7 @@ public class Exo15 {
 
         String words;
         String wordsNew;
-        String inverse;
+        String inverse = "";
         int length;
 
         Scanner scanner = new Scanner(System.in);
@@ -44,8 +44,13 @@ public class Exo15 {
             }
         }
         wordsNew = wordsNew.toLowerCase();
-        StringBuilder str = new StringBuilder(wordsNew);
-        inverse = str.reverse().toString();
+
+        for (int j= wordsNew.length()-1; j>=0; j--){
+            inverse += wordsNew.charAt(j);
+        }
+
+//        System.out.println(wordsNew);
+//        System.out.println(inverse);
 
         if (wordsNew.equals(inverse)){
 
