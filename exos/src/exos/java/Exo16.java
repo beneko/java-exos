@@ -2,7 +2,7 @@ package exos.java;
 
 import java.util.Scanner;
 
-public class Exos16 {
+public class Exo16 {
     /*
     Ecrivez un programme permettant de créer un tableau, dont la taille est saisie au clavier.
 

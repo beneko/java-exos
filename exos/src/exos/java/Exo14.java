@@ -2,7 +2,7 @@ package exos.java;
 
 import java.util.Scanner;
 
-public class Exos14 {
+public class Exo14 {
     /*
     dessin d'un triangle
     Écrire un programme qui affiche un triangle isocèle formé d'étoiles. La hauteur du triangle (c'est à dire son nombre de lignes) sera donnée par l'utilisateur. Vous devez obtenir le résultat suivant:

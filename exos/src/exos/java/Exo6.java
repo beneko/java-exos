@@ -2,7 +2,7 @@ package exos.java;
 
 import java.util.Scanner;
 
-public class Exos6 {
+public class Exo6 {
     /*
      ASCII
     Écrire un programme qui saisit un code Unicode en décimal et affiche le caractère correspondant.
