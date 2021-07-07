@@ -3,7 +3,7 @@ package exos.java;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Exos19 {
+public class Exo19 {
     /*
     Exo17 with class ArrayList
      */
