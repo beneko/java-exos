@@ -1,6 +1,5 @@
 package exos.java;
 
-import jdk.swing.interop.SwingInterOpUtils;
 
 import java.util.Scanner;
 
@@ -30,7 +29,6 @@ public class Exo15 {
         words = scanner.nextLine();
         length = words.length();
         wordsNew = words;
-        boolean palindrome = true;
 
         for (int i = 0; i < length; i++) {
             char chr = words.charAt(i);
@@ -46,26 +44,14 @@ public class Exo15 {
             }
         }
         wordsNew = wordsNew.toLowerCase();
-        int newLength = wordsNew.length(); // update length
         StringBuilder str = new StringBuilder(wordsNew);
         inverse = str.reverse().toString();
 
-        for (int j = 0; j < newLength; j++) {
-
-            if (wordsNew.charAt(j) != inverse.charAt(j)) {
-
-                palindrome = false;
-                break;
-
-            }
-        }
-        System.out.println(wordsNew);
-        System.out.println(inverse);
-        if (palindrome){
+        if (wordsNew.equals(inverse)){
 
             System.out.println("C'est un palindrome!");
 
-        }else{
+        } else {
 
             System.out.println("Ce n'est pas un palindrome!");
 

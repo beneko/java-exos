@@ -1,5 +1,6 @@
 package exos.java;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exo16 {
@@ -23,11 +24,6 @@ public class Exo16 {
             arr[i] = scanner.next();
         }
         System.out.println("Voici votre tableau:");
-        System.out.print("{");
-        for (String t : arr ){
-            System.out.print(" \"" + t + "\" ");
-            System.out.print(", ");
-        }
-        System.out.print("}");
+        System.out.println(Arrays.toString(arr));
     }
 }
