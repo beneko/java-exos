@@ -14,7 +14,7 @@ public class Menu {
         System.out.println("|                    Welcome                     |");
         System.out.println("==================================================");
         do {
-            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-21)");
+            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-22)");
             Scanner scanner= new Scanner(System.in);
             int n = scanner.nextInt();
             switch (n){
@@ -39,7 +39,33 @@ public class Menu {
                 case 18 -> Exo18.trier();
                 case 19 -> Exo19.prenom();
                 case 20 -> Exo20.tableau();
+                case 21 -> {
 
+                    double num1, num2;
+                    char operator;
+                    double result;
+
+                    System.out.println("Please enter the first number:");
+                    num1 = scanner.nextFloat();
+                    System.out.println("Please enter an operator:");
+                    operator = scanner.next().charAt(0);
+                    System.out.println("Please enter the second number:");
+                    num2 = scanner.nextFloat();
+                    result = Fonctions.calcul(operator,num1,num2);
+                    System.out.println("the result is equal to:" + result);
+
+                }
+                case 22 -> {
+                    String str1,str2;
+                    System.out.println("Please enter a string:");
+                    scanner.nextLine();
+                    str1 = scanner.next();
+                    System.out.println("Please enter another string:");
+                    scanner.nextLine();
+                    str2 = scanner.next();
+                    String result = Fonctions.concat(str1,str2);
+                    System.out.println(result);
+                }
                 default -> System.out.println("l'exercice n'est pas trouvé!");
             }
             System.out.println("Voulez vous continuer? y/n");
