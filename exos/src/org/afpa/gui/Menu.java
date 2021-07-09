@@ -2,6 +2,7 @@ package org.afpa.gui;
 
 import org.afpa.model.*;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Menu {
@@ -14,7 +15,7 @@ public class Menu {
         System.out.println("|                    Welcome                     |");
         System.out.println("==================================================");
         do {
-            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-23)");
+            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-24)");
             Scanner scanner= new Scanner(System.in);
             int n = scanner.nextInt();
             switch (n){
@@ -73,6 +74,15 @@ public class Menu {
                     int result = Fonctions.compteMot(str);
                     System.out.printf("Il y a %d mot dans la phrase", result);
                     System.out.println("");
+                }
+                case 24 ->{
+                    System.out.println("Please enter a number: ");
+                    scanner.nextLine();
+                    int num = scanner.nextInt();
+                    int[] result = Fonctions.fibonacci(num);
+                    System.out.printf("les %d premiers termes de la suite de Fibonacci sont : ", num);
+                    System.out.println(Arrays.toString(result));
+
                 }
                 default -> System.out.println("l'exercice n'est pas trouvé!");
             }
