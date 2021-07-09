@@ -14,7 +14,7 @@ public class Menu {
         System.out.println("|                    Welcome                     |");
         System.out.println("==================================================");
         do {
-            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-22)");
+            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-23)");
             Scanner scanner= new Scanner(System.in);
             int n = scanner.nextInt();
             switch (n){
@@ -66,20 +66,30 @@ public class Menu {
                     String result = Fonctions.concat(str1,str2);
                     System.out.println(result);
                 }
+                case 23 ->{
+                    System.out.println("Please enter a sentence:");
+                    scanner.nextLine();
+                    String str = scanner.nextLine();
+                    int result = Fonctions.compteMot(str);
+                    System.out.printf("Il y a %d mot dans la phrase", result);
+                    System.out.println("");
+                }
                 default -> System.out.println("l'exercice n'est pas trouvé!");
             }
+
             System.out.println("Voulez vous continuer? y/n");
-            scanner.nextLine();
-            char reponse = scanner.nextLine().charAt(0);
+            char reponse = scanner.next().charAt(0);
             switch (reponse){
                 case 'y' -> again = true;
                 case 'n' -> again = false;
-                default -> System.out.println("votre choix n'est pas reconnu ce sera non !!!");
+                default -> System.out.println("votre choix n'est pas reconnu, ce sera non !!!");
             }
 
         }while(again);
+
         System.out.println("==================================================");
-        System.out.println("|                    Goodbye!                     |");
+        System.out.println("|                   Goodbye!                     |");
         System.out.println("==================================================");
+
     }
 }
