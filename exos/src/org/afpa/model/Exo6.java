@@ -3,7 +3,7 @@ package org.afpa.model;
 import java.util.Scanner;
 
 public class Exo6 {
-    /*
+    /**
      ASCII
     Écrire un programme qui saisit un code Unicode en décimal et affiche le caractère correspondant.
     Exemple: la saisie de l’entier 65 donne le caractère « A ».

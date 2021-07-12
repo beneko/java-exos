@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class TriNombre {
-        /*
+        /**
         Créer la classe « TriNombre ».
             Cette classe comporte 2 données membres : 1 tableau de types entiers et la taille du tableau.
             Cette classe contient 3 méthodes (fonctions membres) :

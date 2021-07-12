@@ -3,7 +3,7 @@ package org.afpa.model;
 import java.util.Scanner;
 
 public class Exo2 {
-    /*
+    /**
     Diviseur
     Modifier le programme précédent pour effectuer une division.
      */

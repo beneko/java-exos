@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Exo20 {
-    /*
-    Exo16 with class ArrayList
+    /**
+     * Exo16 with class ArrayList
 
     Ecrivez un programme permettant de créer un tableau, dont la taille est saisie au clavier.
 

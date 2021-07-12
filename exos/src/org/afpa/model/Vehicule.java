@@ -6,6 +6,7 @@ public abstract class Vehicule {
         public int pleces;
         public int puissance;
 
+
         public void marche() {
 
         }

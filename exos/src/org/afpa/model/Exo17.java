@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exo17 {
-    /*
+    /**
     On recherche dans un tableau contenant 20 prénoms, un prénom saisi au clavier.
     Lorsque cet élément est trouvé, on l’élimine du tableau en décalant les cases qui le suivent, et en mettant à blanc la dernière case
      */

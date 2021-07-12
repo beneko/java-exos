@@ -3,7 +3,7 @@ package org.afpa.model;
 import java.util.Scanner;
 
 public class Exo13 {
-    /*
+    /**
     Nombre de voyelles.
         Écrire le programme qui compte le nombre de voyelles d’un mot saisi au clavier, en utilisant :
 

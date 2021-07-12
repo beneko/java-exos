@@ -1,7 +1,7 @@
 package org.afpa.model;
 
 public class Cercles {
-    /*
+    /**
     Cercle
         Dans un fichier nommé Cercles.java, créer la classe de même nom avec 1 variable rayon comme donnée membre.
         Créer 2 fonctions membres calculSurface() et calculCirconference() qui retournent le résultat sous forme de double.
@@ -15,7 +15,7 @@ public class Cercles {
 
     public double calculSurface(){
 
-        return Math.pow(this.rayon,2)*Math.PI;
+        return (Math.pow(this.rayon,2)*Math.PI);
     }
     public double calculCirconference(){
 

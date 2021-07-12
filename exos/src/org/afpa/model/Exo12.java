@@ -3,7 +3,7 @@ package org.afpa.model;
 import java.util.Scanner;
 
 public class Exo12 {
-    /*
+    /**
     Somme d'un intervalle
     Écrivez un programme qui saisit deux nombres n1 et n2 et qui calcul ensuite la somme des entiers de n1 à n2.
      */

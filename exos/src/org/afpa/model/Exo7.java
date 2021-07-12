@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exo7 {
 
-    /*
+    /**
     Parité
 
     Écrivez un programme qui demande un nombre à l’utilisateur puis qui test si ce nombre est pair.

@@ -3,7 +3,8 @@ package org.afpa.model;
 import java.util.Scanner;
 
 public class Exo5 {
-    /*   Conversion d'un nombre de secondes en HH:MM:SS
+    /**
+     *  Conversion d'un nombre de secondes en HH:MM:SS
         II s'agit pour un nombre de secondes entré au clavier d'en déduire, son expression en nombre d'heures de minutes et de secondes.
      */
     public static void conversion() {

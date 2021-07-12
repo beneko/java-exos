@@ -3,7 +3,7 @@ package org.afpa.model;
 import java.util.Arrays;
 
 public class Exo18 {
-    /*
+    /**
     Ecrire un programme qui permet de trier un tableau en utilisant le tri à bulles.
     Plus d'information sur le tri à bulle: Wikipedia ou le tri à bulle en musique
      */

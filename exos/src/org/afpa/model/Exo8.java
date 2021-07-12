@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.TimeZone;
 
 public class Exo8 {
-    /*Age
+    /** Age
     Écrivez un programme qui demande l’année de naissance à l’utilisateur.
     En réponse votre programme doit afficher l’âge de l’utilisateur et indiquer si l’utilisateur est majeur ou mineur.
      */

@@ -3,7 +3,7 @@ package org.afpa.model;
 import java.util.Scanner;
 
 public class Exo11 {
-    /*
+    /**
     La somme des entiers inférieurs à N
     Écrivez un programme qui affiche la somme des nombres inférieurs à N.
      */

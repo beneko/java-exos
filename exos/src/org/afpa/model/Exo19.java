@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Exo19 {
-    /*
-    Exo17 with class ArrayList
+    /**
+     * Exo17 with class ArrayList
      */
     public static void prenom() {
         boolean find = false;

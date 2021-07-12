@@ -4,7 +4,7 @@ package org.afpa.model;
 import java.util.Scanner;
 
 public class Exo15 {
-    /*
+    /**
     Un palindrome est un mot que l'on peut lire dans les deux sens.
     La distinction entre majuscules/minuscules n'a aucune importance pour la lecture d'un palindrome.
      Si on ne tient pas compte des espaces, des virgules, des tirets et des apostrophes (i.e. les caractères ' ', ',', '-' et '\''),

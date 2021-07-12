@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Fonctions {
 
-    /*
+    /**
         Reprendre le programme de calculette présenté dans le chapitre précédent,
         et le modifier pour intégrer des fonctions correspondant aux opérations effectuées.
      */
@@ -43,7 +43,7 @@ public class Fonctions {
 
         return result;
     }
-    /*
+    /**
     Chaine de caratères
         Ecrire une fonction de concaténation de chaînes.
         Cette fonction se nommera concat, elle doit prendre deux paramètres chaine1 et chaine2 de type String.
@@ -55,7 +55,7 @@ public class Fonctions {
         return result;
     }
 
-    /*
+    /**
     Chaine de caratères
         Écrire une fonction qui affiche le nombre de mots d’une phrase
         Cette fonction se nommera compteMot. Elle prendra en paramètre une chaîne de caractères.
@@ -87,7 +87,7 @@ public class Fonctions {
         }
         return space+1;
     }
-    /*
+    /**
     Fibonacci
         Écrire un programme qui affiche les premiers termes de la suite de Fibonacci.
 
@@ -105,7 +105,7 @@ public class Fonctions {
     return f;
     }
 
-    /*
+    /**
     Table de multiplication
         Ecrivez une fonction qui affiche une table de multiplication. Votre fonction doit prendre un paramètre qui permet d’indiquer quelle table afficher.
      */
@@ -118,7 +118,7 @@ public class Fonctions {
         }
     }
 
-    /*
+    /**
     Compter le nombre de lettres
         Ecrivez une fonction qui prend deux paramètres :
         phrase de type string et lettre de type string
@@ -139,7 +139,7 @@ public class Fonctions {
         return nombre;
     }
 
-    /*
+    /**
     String Token
         Concevez la function strtok qui prend trois paramètres en entrée et renvoie une chaîne de caractères.
         On suppose que str1 est composée d’une liste de mots séparés par le caractère str2.

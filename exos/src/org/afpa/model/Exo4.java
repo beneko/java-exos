@@ -1,7 +1,7 @@
 package org.afpa.model;
 
 // Il s’agit de calculer une moyenne sur la base de trois notes sachant que :
-/*
+/**
 une note de devoir surveillé a un coefficient de 3
 une note d’interrogation écrite a un coefficient de 2
 une note de travaux pratique a un coefficient de 1

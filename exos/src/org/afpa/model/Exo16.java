@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exo16 {
-    /*
+    /**
     Ecrivez un programme permettant de créer un tableau, dont la taille est saisie au clavier.
 
     Ensuite l'utilisateur doit rentrer les différentes valeurs du tableau.

@@ -3,7 +3,7 @@ package org.afpa.model;
 import java.util.Scanner;
 
 public class Exo9 {
-    /*
+    /**
     Calculette
         Faire la saisie de 2 nombres entiers, puis la saisie d'un opérateur '+', '-', '*' ou '/'.
         Si l'utilisateur entre un opérateur erroné, le programme affichera un message d'erreur.

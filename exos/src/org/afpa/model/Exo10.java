@@ -3,7 +3,7 @@ package org.afpa.model;
 import java.util.Scanner;
 
 public class Exo10 {
-    /*
+    /**
     Les entiers inférieurs à N
     Écrivez un programme qui affiche les nombres inférieurs à N.
      */
