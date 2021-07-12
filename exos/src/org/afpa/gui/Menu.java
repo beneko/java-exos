@@ -15,7 +15,7 @@ public class Menu {
         System.out.println("|                    Welcome                     |");
         System.out.println("==================================================");
         do {
-            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-26)");
+            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-27)");
             Scanner scanner= new Scanner(System.in);
             int n = scanner.nextInt();
             switch (n){
@@ -99,6 +99,12 @@ public class Menu {
                     int nombre = Fonctions.CompteLettre(str,lettre);
                     System.out.printf("Il y a %d lettre(s) de %s dans la phrase.", nombre, lettre);
                     System.out.println("");
+                }
+                case 27 -> {
+                    String str1 = "robert;dupont;amiens;80000";
+                    String result = Fonctions.strtok(str1, ";", 3);
+                    System.out.println(result);
+
                 }
                 default -> System.out.println("l'exercice n'est pas trouvé!");
             }

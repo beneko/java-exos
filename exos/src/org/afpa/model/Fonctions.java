@@ -138,4 +138,16 @@ public class Fonctions {
         }
         return nombre;
     }
+
+    /*
+    String Token
+        Concevez la function strtok qui prend trois paramètres en entrée et renvoie une chaîne de caractères.
+        On suppose que str1 est composée d’une liste de mots séparés par le caractère str2.
+        strtok sert à extraire le nième mot de str1.
+     */
+    public static String strtok (String str1, String str2, int n){
+
+        String[] str = str1.split(str2);
+        return str[n-1];
+    }
 }
