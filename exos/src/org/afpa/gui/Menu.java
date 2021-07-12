@@ -15,7 +15,7 @@ public class Menu {
         System.out.println("|                    Welcome                     |");
         System.out.println("==================================================");
         do {
-            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-29)");
+            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-31)");
             Scanner scanner= new Scanner(System.in);
             int n = scanner.nextInt();
             switch (n){
@@ -121,6 +121,29 @@ public class Menu {
                     tab1.tri();
                     tab1.affiche();
 
+                }
+                case 30 -> {
+
+                    //Un tableau de Formes qui sont des Cercles et des Carrés
+                    Forme[] tableau = { new Carre(2), new Cercle(3), new Carre(5), new Triangle(5 , 6) };
+
+                    String mesFormes = "";
+                    for (Forme fo : tableau)
+                    {
+                        mesFormes += " || " + fo.aire()+ "  || ";
+                    }
+                    System.out.println(" Surface des formes écrites \n sauvagement dans le code");
+                    System.out.println(mesFormes);
+
+                }
+                case 31 ->{
+                    //Un tableau de Formes qui sont des Cercles et des Carrés
+                    Vehicule[] tableau = { new Avion("Boeing ",200,40000), new Velo("Canyon",1, 80), new Bateau("Boat",50,12000 ), new Camion("Volvo",2, 2000) };
+
+                    for (Vehicule vh : tableau)
+                    {
+                       vh.marche();
+                    }
                 }
                 default -> System.out.println("l'exercice n'est pas trouvé!");
             }
