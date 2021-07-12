@@ -46,9 +46,7 @@ public class Fonctions {
     /*
     Chaine de caratères
         Ecrire une fonction de concaténation de chaînes.
-
         Cette fonction se nommera concat, elle doit prendre deux paramètres chaine1 et chaine2 de type String.
-
         Elle doit retourner le résultat de la concaténation de chaine1 et chaine2.
      */
     public static String concat(String chaine1, String chaine2) {
@@ -60,9 +58,7 @@ public class Fonctions {
     /*
     Chaine de caratères
         Écrire une fonction qui affiche le nombre de mots d’une phrase
-
         Cette fonction se nommera compteMot. Elle prendra en paramètre une chaîne de caractères.
-
         Elle retourne le nombre de mots présents dans la phrase.
         Pour compter le nombre de mots, vous pouvez compter le nombre d'espace présents dans la phrase
      */
@@ -107,5 +103,39 @@ public class Fonctions {
             f[i] = f[i-1] + f[i-2];
         }
     return f;
+    }
+
+    /*
+    Table de multiplication
+        Ecrivez une fonction qui affiche une table de multiplication. Votre fonction doit prendre un paramètre qui permet d’indiquer quelle table afficher.
+     */
+    public static void tableMultiplication(int num){
+
+        for (int i=1 ; i<Math.abs(num) ; i++){
+
+            System.out.println(i + " x " + num + " = "+ (i*num));
+
+        }
+    }
+
+    /*
+    Compter le nombre de lettres
+        Ecrivez une fonction qui prend deux paramètres :
+        phrase de type string et lettre de type string
+        La fonction compte le nombre de fois ou lettre apparait dans phrase
+     */
+    public static int CompteLettre(String str, String lettre){
+
+        int nombre = 0 ;
+        char ltr = lettre.charAt(0);
+
+        for (int i=0 ; i<str.length(); i++){
+
+            char chr = str.charAt(i);
+            if(chr == ltr){
+                nombre++;
+            }
+        }
+        return nombre;
     }
 }

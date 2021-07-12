@@ -15,7 +15,7 @@ public class Menu {
         System.out.println("|                    Welcome                     |");
         System.out.println("==================================================");
         do {
-            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-24)");
+            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-26)");
             Scanner scanner= new Scanner(System.in);
             int n = scanner.nextInt();
             switch (n){
@@ -83,6 +83,22 @@ public class Menu {
                     System.out.printf("les %d premiers termes de la suite de Fibonacci sont : ", num);
                     System.out.println(Arrays.toString(result));
 
+                }
+                case 25 ->{
+                    System.out.println("Entrez un chiffre pour voir sa table de multipication: ");
+                    scanner.nextLine();
+                    int num = scanner.nextInt();
+                    Fonctions.tableMultiplication(num);
+                }
+                case 26 -> {
+                    System.out.println("Entrez une phrase: ");
+                    scanner.nextLine();
+                    String str = scanner.nextLine();
+                    System.out.println("Entrez une lettre: ");
+                    String lettre = scanner.next();
+                    int nombre = Fonctions.CompteLettre(str,lettre);
+                    System.out.printf("Il y a %d lettre(s) de %s dans la phrase.", nombre, lettre);
+                    System.out.println("");
                 }
                 default -> System.out.println("l'exercice n'est pas trouvé!");
             }
