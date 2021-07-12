@@ -15,7 +15,7 @@ public class Menu {
         System.out.println("|                    Welcome                     |");
         System.out.println("==================================================");
         do {
-            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-27)");
+            System.out.println("Entrez le numéro d'éxercice que vous voulez éxecuter?(entre 1-29)");
             Scanner scanner= new Scanner(System.in);
             int n = scanner.nextInt();
             switch (n){
@@ -104,6 +104,22 @@ public class Menu {
                     String str1 = "robert;dupont;amiens;80000";
                     String result = Fonctions.strtok(str1, ";", 3);
                     System.out.println(result);
+
+                }
+                case 28-> {
+                    Cercles crc1 = new Cercles(10);
+                    Cercles crc2 = new Cercles(45);
+
+                    System.out.println("La surface de crc1 est égal à "+ crc1.calculSurface());
+                    System.out.println("La circonference de crc1 est égal à "+ crc1.calculCirconference());
+                    System.out.println("La surface de crc2 est égal à "+ crc2.calculSurface());
+                    System.out.println("La circonference de crc2 est égal à "+ crc2.calculCirconference());
+                }
+                case 29 ->{
+                    TriNombre tab1 = new TriNombre();
+                    tab1.saisie();
+                    tab1.tri();
+                    tab1.affiche();
 
                 }
                 default -> System.out.println("l'exercice n'est pas trouvé!");
