@@ -124,7 +124,7 @@ public class Fonctions {
         phrase de type string et lettre de type string
         La fonction compte le nombre de fois ou lettre apparait dans phrase
      */
-    public static int CompteLettre(String str, String lettre){
+    public static int compteLettre(String str, String lettre){
 
         int nombre = 0 ;
         char ltr = lettre.charAt(0);

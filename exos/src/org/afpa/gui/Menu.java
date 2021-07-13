@@ -96,7 +96,7 @@ public class Menu {
                     String str = scanner.nextLine();
                     System.out.println("Entrez une lettre: ");
                     String lettre = scanner.next();
-                    int nombre = Fonctions.CompteLettre(str,lettre);
+                    int nombre = Fonctions.compteLettre(str,lettre);
                     System.out.printf("Il y a %d lettre(s) de %s dans la phrase.", nombre, lettre);
                     System.out.println("");
                 }
